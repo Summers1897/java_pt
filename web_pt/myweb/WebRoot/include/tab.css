@@ -1,0 +1,54 @@
+@charset "gb2312";
+/* CSS Document */
+
+/** 清除边距 **/
+body,h1,h2,h3,h4,h5,h6,p,blockquote, /* structural elements 结构元素 */
+dl,dt,dd,ul,ol,li,a,span,i,b, /* list elements 列表元素 */
+form,fieldset,legend,button,input,textarea, /* form elements 表单元素 */
+th,td /* table elements 表格元素 */ {margin:0;padding:0;}
+body{ background:#f7f7f7;}
+
+/** 字体设置 **/
+body,
+button,input,select,textarea/* for ie */{font:12px/1.5 \5b8b\4f53, tahoma, arial, sans-serif; color:#333;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+address,em{font-style:normal;} /* 将斜体扶正 */
+
+/*去除元素轮廓---fbx---*/
+div,table,form,input,button,select,textarea,fieldset,legend{outline:none;}/* for google / safari*/
+
+/** 重置列表元素 **/
+ul,ol{list-style:none outside none;}
+
+/** 重置链接元素 **/
+a{text-decoration:none; color:#333; cursor:pointer;}
+a:hover{color:#a71f24;text-decoration:underline;}
+
+/** 重置表单元素 **/
+legend{text-indent:-9999px;height:0;}
+fieldset,img{border:0;} /* img 搭车：让链接里的 img 无边框 */
+button,input,select,textarea {font-size:100%;} /* 使得表单元素在 ie 下能继承字体大小 */
+
+/** 重置表格元素 **/
+table{}
+
+/** 重置元素垂直居中 **/
+img,input,select,textarea,button{vertical-align:middle;}
+
+
+.bh-p-wox{ width:1000px; height:810px; margin:0 auto; background:#abc7ea;}
+.bh-p-woxy{ width:100%; height:750px; margin:0 auto; background:#abc7ea; padding-top:10px;}
+.bh-p-wox-left{ width:100%; height:750px; float:left; background:#e6edfd; border:1px solid #367da5; border-left:none;}
+.bh-p-ty{ width:100%; height:590px;}
+.bh-p-sing{ width:100%; height:135px; margin:0 auto; border:1px solid #b8dded; background:#fff; margin-top:10px;}
+.bh-p-sing-top{ width:100%; height:28px; line-height:28px; background:url(../images/tp.jpg) repeat-x;}
+.bh-p-sing-top ul { list-style:none;}
+.bh-p-sing-top ul li{ width:66px; height:26px; display:block; float:left; font-size:12px; text-align:center; border-right:1px solid #cfeaf5;}
+.bh-p-sing-top ul li a{ text-decoration:none; color:#666666;}
+.bh-p-sing-top ul li a:ACTIVE{ width:66px; height:26px; display:block; background:url(../images/bi.jpg) no-repeat; font-size:12px; font-weight:bold; color:#ff6600 !important; text-decoration:none;}
+.bh-p-ting a {width:66px; height:26px; display:block; background:url(../images/bi.jpg) no-repeat; font-size:12px; font-weight:bold; color:#ff6600 !important;}
+.bh-p-list{ width:745px; height:80px; padding-left: 20px;}
+.bh-p-list ul {list-style:none;}
+.bh-p-list ul li {width:330px; height:28px; line-height:28px; font-size:12px; border-bottom:1px dotted #cdcdcd; display:block; float:left; margin-right:16px; _margin-right:12px; text-indent:2px;background: background:url(<%=path%>images/arrow_right_blue.gif) no-repeat 0 6px ;}
+.bh-p-wox-right{ width:200px; height:750px; float:left; margin-left:4px;background:#e6edfd; border:1px solid #367da5;}
+.bh-p-foot{ width:1000px; height:53px;}

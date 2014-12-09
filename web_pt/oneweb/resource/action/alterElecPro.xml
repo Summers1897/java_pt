@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="alterElecPro" extends="json-default" namespace="/alterElecPro">
+		<action name="list" class="alterElecProAction" method="list">
+			 <result name="success">/backupRecords/alterElecPro/alterElecProList.jsp</result>
+		</action>
+		<action name="add" class="alterElecProAction" method="add">
+        	<result name="success" type="json"></result>
+		</action>
+		<action name="edit" class="alterElecProAction" method="edit">
+        	<result name="success" type="json"></result>
+   		</action>
+		<action name="delete" class="alterElecProAction" method="delete">
+   			 <result name="success" type="json"></result>
+   		</action>
+		<action name="addpage" class="alterElecProAction" method="addPage">
+			 <result name="success">/backupRecords/alterElecPro/alterElecProAdd.jsp</result>
+		</action>
+		<action name="editpage" class="alterElecProAction" method="editPage">
+			 <result name="success">/backupRecords/alterElecPro/alterElecProEdit.jsp</result>
+		</action>
+		<action name="detail" class="alterElecProAction" method="detail">
+			 <result name="success">/backupRecords/alterElecPro/alterElecProDetail.jsp</result>
+		</action>
+	</package>
+
+</struts>

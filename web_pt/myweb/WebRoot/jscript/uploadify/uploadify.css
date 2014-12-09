@@ -1,0 +1,108 @@
+/*
+Uploadify
+Copyright (c) 2012 Reactive Apps, Ronnie Garcia
+Released under the MIT License <http://www.opensource.org/licenses/mit-license.php> 
+*/
+
+.uploadify {
+	position: relative;
+	margin-bottom: 1em;
+}
+.uploadify-button {
+	cursor:hand;
+	width:60px;
+	height:22px;
+	text-decoration:none;
+	background-image: url('btn_bk.png');
+	border: 1px solid #abbbc9;
+	color: black;
+	font: nomal 12px Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+.uploadify-button:hover{
+	cursor:hand;
+	text-decoration:none;
+	border: 1px solid #abbbc9;
+	color: black;
+	font: nomal 12px Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+.uploadify-button.disabled {
+	background-color: #D0D0D0;
+	color: #808080;
+}
+.uploadify-queue {
+	margin-bottom: 1em;
+}
+
+/*上传队列条目*/
+.uploadify-queue-item {
+	font: 11px Verdana, Geneva, sans-serif;
+	margin-bottom: 1px;
+	width: 380px;
+}
+
+/*编辑页面附件列表*/
+.edit-files-list{
+	height:24px;
+	background-color: #F5F5F5;
+	font: 11px Verdana, Geneva, sans-serif;
+	width: 500px;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+.uploadify-error {
+	color: #EE3838;
+}
+.uploadify-queue-item .cancel1 a {
+	background: url('uploadify_operate.gif') -60px -1px no-repeat;
+	float: right;
+	height:	16px;
+	text-indent: -9999px;
+	width: 16px;
+}
+.uploadify-queue-item .cancel1 a:hover {
+	background: url('uploadify_operate.gif') -60px -21px no-repeat;
+	float: right;
+	height:	16px;
+	text-indent: -9999px;
+	width: 16px;
+}
+
+.download a{
+	background: url('uploadify_operate.gif') -80px 0 no-repeat;
+	float: right;
+	height:	16px;
+	text-indent: -9999px;
+	width: 16px;
+}
+
+.download a:hover{
+	background: url('uploadify_operate.gif') -80px -20px no-repeat;
+	float: right;
+	height:	16px;
+	text-indent: -9999px;
+	width: 16px;
+}
+
+.uploadify-queue-item.completed {
+	background-color: #E5E5E5;
+}
+
+
+/*进度条背景*/
+.uploadify-progress {
+	background-color:#E5E5E5;
+	margin-top:5px;
+	width: 100%;
+	max-width: 350px;
+}
+
+/*进度条*/
+.uploadify-progress-bar {
+	background-color: #B4D9FC;
+	height: 3px;
+	width: 0%;
+	margin-top:-15px;
+	max-width: 300px;
+}

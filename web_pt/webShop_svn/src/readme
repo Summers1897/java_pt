@@ -1,0 +1,54 @@
+创建机构指标模版试图
+create view orgindex as
+(select orgset.orgid,indexset.indexid 
+	from 
+		(select so.id orgid,spt.power_code 
+			from sys_organ so,sys_power_type spt 
+			where so.power_type=spt.id and so.org_isvalid=1
+		)orgset
+	left join 
+		(select mi.id indexid,inspt.power_code indexpowertype 
+			from market_index mi,sys_power_type inspt 
+			where mi.power_type=inspt.id and mi.is_valid=1
+		) indexset 
+	on orgset.power_code like indexset.indexpowertype||'%'
+union all
+select * 
+	from 
+		(select so.id orgid 
+			from sys_organ so 
+			where so.org_isvalid=1),
+		(select mi.id indexid 
+			from market_index mi,sys_power_type spt 
+			where mi.power_type=spt.id and spt.power_code='ALL' and mi.is_valid=1)
+)
+
+
+
+
+数据类型映射,和数据映射类型那个有关,code改变需要重新修改页面和程序
+
+
+
+
+drop table Quartz_Timer cascade constraints;
+
+/*==============================================================*/
+/* Table: Quartz_Timer                                          */
+/*==============================================================*/
+create table Quartz_Timer  (
+   id                   NUMBER                          not null,
+   timer_name           VARCHAR2(100),
+   tigger_name          VARCHAR2(50),
+   cron_express         VARCHAR2(30),
+   remark               VARCHAR2(500),
+   constraint PK_QUARTZ_TIMER primary key (id)
+);
+
+comment on table Quartz_Timer is
+'定时器';
+
+
+
+
+1	1	三线数据采集		11 11 11 11 11 ?		AAASdmAAHAAAAWzAAA

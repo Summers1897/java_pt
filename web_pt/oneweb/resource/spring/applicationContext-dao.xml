@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd" default-autowire="byName">
+	<bean id="userDao" class="com.k.market.dao.impl.UserDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="roleDao" class="com.k.market.dao.impl.RoleDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="userRoleDao" class="com.k.market.dao.impl.UserRoleDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="logDao" class="com.k.market.dao.impl.LogDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="organDao" class="com.k.market.dao.impl.OrganDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="sysParamDao" class="com.k.market.dao.impl.ParamDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="resourceDao" class="com.k.market.dao.impl.ResourceDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="postDao" class="com.k.market.dao.impl.PostDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="leadLimitDao" class="com.k.market.dao.impl.LeadLimitDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="newsDao" class="com.k.market.dao.impl.NewsDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="relFileDao" class="com.k.market.dao.impl.RelFileDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="elecPriceAdjustDao" class="com.k.market.dao.impl.ElecPriceAdjustDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="gatewayCheckDao" class="com.k.market.dao.impl.GatewayCheckDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="reportDao" class="com.k.market.dao.impl.ReportDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="reportModelDao" class="com.k.market.dao.impl.ReportModelDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="recmanaContractDao" class="com.k.market.dao.impl.RecmanaContractDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="recmanaMeetingDataDao" class="com.k.market.dao.impl.RecmanaMeetingDataDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="recmanaLicenceDao" class="com.k.market.dao.impl.RecmanaLicenceDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="alterElecProDao" class="com.k.market.dao.impl.AlterElecProDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="powerGridDao" class="com.k.market.dao.impl.PowerGridDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="recmanaHydrologyDao" class="com.k.market.dao.impl.RecmanaHydrologyDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="uploadDao" class="com.k.market.dao.impl.UploadDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="indexDao" class="com.k.market.dao.impl.IndexDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="elecUnitManageDao" class="com.k.market.dao.impl.ElecUnitManageDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="powerTypeDao" class="com.k.market.dao.impl.PowerTypeDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="sysMessageDao" class="com.k.market.dao.impl.SysMessageDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="threeLineDao" class="com.k.market.dao.impl.ThreeLineDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="monthThreeLineDao" class="com.k.market.dao.impl.MonthThreeLineDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="mapDataTypeDao" class="com.k.market.dao.impl.MapDataTypeDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="mapDataDao" class="com.k.market.dao.impl.MapDataDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="threeLineCollectDao" class="com.k.market.dao.impl.ThreeLineCollectDaoImpl" scope="prototype"></bean>
+	<bean id="quartzTimerDao" class="com.k.market.dao.impl.QuartzTimerDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="installedCapacityRankDao" class="com.k.market.dao.impl.InstalledCapacityRankDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="useHoursDao" class="com.k.market.dao.impl.indexAnalyse.UseHoursDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="elecProductDao" class="com.k.market.dao.impl.indexAnalyse.ElecProductDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="dataIndicatorsKBCollectDao" class="com.k.market.dao.impl.datacollect.DataIndicatorsKBCollectDaoImpl" scope="prototype"></bean>
+	<bean id="marketDataIndicatorsKBCollectDao" class="com.k.market.dao.impl.datacollect.MarketDataIndicatorsKBCollectDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="loadRateDao" class="com.k.market.dao.impl.indexAnalyse.LoadRateDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="taskDoDao" class="com.k.market.dao.impl.TaskDoDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="marketDailyDataDao" class="com.k.market.dao.impl.MarketDailyDataDaoImpl" scope="prototype">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+</beans>

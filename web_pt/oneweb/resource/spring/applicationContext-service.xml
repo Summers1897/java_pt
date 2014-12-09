@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+	default-autowire="byName">
+	<bean id="userService" class="com.k.market.service.impl.UserServiceImpl" scope="prototype"></bean>
+	<bean id="roleService" class="com.k.market.service.impl.RoleServiceImpl" scope="prototype"></bean>
+	<bean id="logService" class="com.k.market.service.impl.LogServiceImpl" scope="prototype"></bean>
+	<bean id="organService" class="com.k.market.service.impl.OrganServiceImpl" scope="prototype"></bean>
+	<bean id="paramService" class="com.k.market.service.impl.ParamServiceImpl" scope="prototype"></bean>
+	<bean id="resourceService" class="com.k.market.service.impl.ResourceServiceImpl" scope="prototype"></bean>
+	<bean id="postService" class="com.k.market.service.impl.PostServiceImpl" scope="prototype"></bean>
+	<bean id="leadLimitService" class="com.k.market.service.impl.LeadLimitServiceImpl" scope="prototype"></bean>
+	<bean id="newsService" class="com.k.market.service.impl.NewsServiceImpl" scope="prototype"></bean>
+	<bean id="relFileService" class="com.k.market.service.impl.RelFileServiceImpl" scope="prototype"></bean>
+	<bean id="elecPriceAdjustService" class="com.k.market.service.impl.ElecPriceAdjustServiceImpl" scope="prototype"></bean>
+	<bean id="gatewayCheckService" class="com.k.market.service.impl.GatewayCheckServiceImpl" scope="prototype"></bean>
+	<bean id="reportService" class="com.k.market.service.impl.ReportServiceImpl" scope="prototype"></bean>
+	<bean id="reportModelService" class="com.k.market.service.impl.ReportModelServiceImpl" scope="prototype"></bean>
+	<bean id="recmanaContractService" class="com.k.market.service.impl.RecmanaContractServiceImpl" scope="prototype"></bean>
+	<bean id="recmanaMeetingDataService" class="com.k.market.service.impl.RecmanaMeetingDataServiceImpl" scope="prototype"></bean>
+	<bean id="recmanaLicenceService" class="com.k.market.service.impl.RecmanaLicenceServiceImpl" scope="prototype"></bean>
+	<bean id="alterElecProService" class="com.k.market.service.impl.AlterElecProServiceImpl" scope="prototype"></bean>
+	<bean id="powerGridService" class="com.k.market.service.impl.PowerGridServiceImpl" scope="prototype"></bean>
+	<bean id="recmanaHydrologyService" class="com.k.market.service.impl.RecmanaHydrologyServiceImpl" scope="prototype"></bean>
+	<bean id="indexService" class="com.k.market.service.impl.IndexServiceImpl" scope="prototype"></bean>
+	<bean id="elecService" class="com.k.market.service.impl.ElecUnitManageServiceImpl" scope="prototype"></bean>
+	<bean id="uploadService" class="com.k.market.service.impl.UploadServiceImpl" scope="prototype"></bean>
+	<bean id="powerTypeService" class="com.k.market.service.impl.PowerTypeServiceImpl" scope="prototype"></bean>
+	<bean id="sysMessageService" class="com.k.market.service.impl.SysMessageServiceImpl" scope="prototype"></bean>
+	<bean id="threeLineService" class="com.k.market.service.impl.ThreeLineServiceImpl" scope="prototype"></bean>
+	<bean id="monthThreeLineService" class="com.k.market.service.impl.MonthThreeLineServiceImpl" scope="prototype"></bean>
+	<bean id="mapDataTypeService" class="com.k.market.service.impl.MapDataTypeServiceImpl" scope="prototype"></bean>
+	<bean id="mapDataService" class="com.k.market.service.impl.MapDataServiceImpl" scope="prototype"></bean>
+	<bean id="quartzTimerService" class="com.k.market.service.impl.QuartzTimerServiceImpl" scope="prototype"></bean>
+	<bean id="installedCapacityRankService" class="com.k.market.service.impl.InstalledCapacityRankServiceImpl" scope="prototype"></bean>
+	<bean id="useHoursService" class="com.k.market.service.impl.indexAnalyse.UseHoursServiceImpl" scope="prototype"></bean>
+	<bean id="elecProductService" class="com.k.market.service.impl.indexAnalyse.ElecProductServiceImpl" scope="prototype"></bean>
+	<bean id="dataIndicatorsKBCollectService" class="com.k.market.service.impl.datacollect.DataIndicatorsKBCollectServiceImpl" scope="prototype"></bean>
+	<bean id="loadRateService" class="com.k.market.service.impl.indexAnalyse.LoadRateServiceImpl" scope="prototype"></bean>
+	<bean id="taskDoService" class="com.k.market.service.impl.TaskDoServiceImpl" scope="prototype"></bean>
+	<bean id="marketDailyDataService" class="com.k.market.service.impl.MarketDailyDataServiceImpl" scope="prototype"></bean>
+</beans>

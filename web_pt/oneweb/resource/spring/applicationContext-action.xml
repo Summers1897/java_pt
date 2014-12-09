@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+	default-autowire="byName">
+	<bean id="taskDoAction" class="com.k.market.action.TaskDoAction" scope="prototype"></bean>
+	<bean id="organAction" class="com.k.market.action.OrganAction" scope="prototype"></bean>
+	<bean id="resourceAction" class="com.k.market.action.ResourceAction" scope="prototype"></bean>
+	<bean id="userAction" class="com.k.market.action.UserAction" scope="prototype"></bean>
+	<bean id="roleAction" class="com.k.market.action.RoleAction" scope="prototype"></bean>
+	<bean id="logAction" class="com.k.market.action.LogAction" scope="prototype"></bean>
+	<bean id="paramAction" class="com.k.market.action.ParamAction" scope="prototype"></bean>
+	<bean id="postAction" class="com.k.market.action.PostAction" scope="prototype"></bean>
+	<bean id="leadLimitAction" class="com.k.market.action.LeadLimitAction" scope="prototype"></bean>
+	<bean id="newsAction" class="com.k.market.action.NewsAction" scope="prototype"></bean>
+	<bean id="relFileAction" class="com.k.market.action.RelFileAction" scope="prototype"></bean>
+	<bean id="elecPriceAdjustAction" class="com.k.market.action.ElecPriceAdjustAction" scope="prototype"></bean>
+	<bean id="gatewayCheckAction" class="com.k.market.action.GatewayCheckAction" scope="prototype"></bean>
+	<bean id="reportAction" class="com.k.market.action.ReportAction" scope="prototype"></bean>
+	<bean id="recmanaContractAction" class="com.k.market.action.RecmanaContractAction" scope="prototype"></bean>
+	<bean id="recmanaMeetingDataAction" class="com.k.market.action.RecmanaMeetingDataAction" scope="prototype"></bean>
+	<bean id="recmanaLicenceAction" class="com.k.market.action.RecmanaLicenceAction" scope="prototype"></bean>
+	<bean id="alterElecProAction" class="com.k.market.action.AlterElecProAction" scope="prototype"></bean>
+	<bean id="uploadAction" class="com.k.market.action.UploadAction" scope="prototype"></bean>
+	<bean id="recmanaAttachmentAction" class="com.k.market.action.RecmanaAttachmentAction" scope="prototype"></bean>
+	<bean id="recmanaHydrologyAction" class="com.k.market.action.RecmanaHydrologyAction" scope="prototype"></bean>
+	<bean id="indexAction" class="com.k.market.action.IndexAction" scope="prototype"></bean>
+	<bean id="elecUnitManageAction" class="com.k.market.action.ElecUnitManageAction" scope="prototype"></bean>
+	<bean id="powerTypeAction" class="com.k.market.action.PowerTypeAction" scope="prototype"></bean>
+	<bean id="powerGridAction" class="com.k.market.action.PowerGridAction" scope="prototype"></bean>
+	<bean id="sysMessageAction" class="com.k.market.action.SysMessageAction" scope="prototype"></bean>
+	<bean id="threeLineAction" class="com.k.market.action.ThreeLineAction" scope="prototype"></bean>
+	<bean id="monthThreeLineAction" class="com.k.market.action.MonthThreeLineAction" scope="prototype"></bean>
+	<bean id="mapDataTypeAction" class="com.k.market.action.MapDataTypeAction" scope="prototype"></bean>
+	<bean id="mapDataAction" class="com.k.market.action.MapDataAction" scope="prototype"></bean>
+	<bean id="quartzTimerAction" class="com.k.market.action.QuartzTimerAction" scope="prototype"></bean>
+	<bean id="installedCapacityRankAction" class="com.k.market.action.InstalledCapacityRankAction" scope="prototype"></bean>
+	<bean id="useHoursAction" class="com.k.market.action.indexAnalyse.UseHoursAction" scope="prototype"></bean>
+	<bean id="dataIndicatorsKBCollectAction" class="com.k.market.action.datacollect.DataIndicatorsKBCollectAction" scope="prototype"></bean>
+	<bean id="loadRateAction" class="com.k.market.action.indexAnalyse.LoadRateAction" scope="prototype"></bean>
+	<bean id="elecproductAction" class="com.k.market.action.indexAnalyse.ElecProductAction" scope="prototype"></bean>
+</beans>

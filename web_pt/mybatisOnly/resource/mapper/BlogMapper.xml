@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper 
+          PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.k.mybatis.BlogMapper">
+	<resultMap type="com.k.mybatis.Blog" id="Blog">
+		<result column="id" property="id"></result>
+		<result column="bname" property="bname"></result>
+	</resultMap>
+	<resultMap type="com.k.mybatis.Blog12" id="Blog12">
+		<result column="id1" property="id1"></result>
+		<result column="id2" property="id2"></result>
+		<result column="bn1" property="bn1"></result>
+		<result column="bn2" property="bn2"></result>
+	</resultMap>
+	<select id="selectBlog" resultType="Blog"> select * from Blog1 t where t.id =${id}</select>
+	<select id="selectBlog12" resultMap="com.k.mybatis.Blog12" parameterType="int"> select t1.id id1,t1.bname bn1,t2.id id2,t2.bname bn2 from Blog1 t1,Blog2 t2 where t1.id =${id}</select>
+</mapper>

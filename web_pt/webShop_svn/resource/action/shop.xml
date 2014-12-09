@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="shop" extends="json-default" namespace="/shop">
+		<action name="list" class="shopAction" method="list">
+			<result name="success">/shop/shopList.jsp</result>
+		</action>
+		<action name="addPage" class="shopAction" method="addPage">
+			<result name="success">/shop/shopAdd.jsp</result>
+		</action>
+		<action name="editPage" class="shopAction" method="editPage">
+			<result name="success">/shop/shopEdit.jsp</result>
+		</action>
+		<action name="shopGoodsList" class="shopAction" method="shopGoodsList">
+			<result name="success">
+				<param name="namespace">/goods</param>
+				<param name="actionName">list</param>
+				<param name="shopId">${shopId}</param>
+			</result>
+		</action>
+	</package>
+</struts>

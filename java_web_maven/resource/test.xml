@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+	<employee>
+		<name>name1</name>
+		<sex>m1</sex>
+		<age>1</age>
+	</employee>
+	<employee>
+		<name>name2</name>
+		<sex>m2</sex>
+		<age>2</age>
+	</employee>
+</employees>
